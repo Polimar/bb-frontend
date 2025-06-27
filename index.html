@@ -533,11 +533,12 @@
         </div>
     </div>
 
+    <!-- BrainBrawler Configuration -->
+    <script src="js/config.js"></script>
+    
     <script>
-        // Configuration
-        // Use same hostname as frontend for API calls
-        const API_BASE = `http://${window.location.hostname}:3000`;
-        console.log('🔧 DEBUG: window.location.hostname =', window.location.hostname);
+        // Configuration using Railway-compatible setup
+        const API_BASE = window.BrainBrawlerConfig.API_BASE_URL;
         console.log('🔧 DEBUG: API_BASE =', API_BASE);
         
         let currentTab = 'login';
